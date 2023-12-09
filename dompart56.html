@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+        }
+    </style> -->
+    <style>
+        body{
+            height: 2000px;
+        }
+    </style>
+</head>
+<body>
+    <!-- part59 -->
+    <!-- <div id="box" onclick="fn()"></div> -->
+    <!-- here mouseup ,ondbclick,oncontextmenu can be used  -->
+    <!-- <div id="box" onmousedown="fn()"></div> -->
+
+    <!-- <div id="box"></div> -->
+
+
+
+
+
+
+
+    <!-- <button id="btn" onclick="btnClick()">click me</button> -->
+    <!-- <button id="btn">click me</button> -->
+    <!-- inline method by on click and anoher method is event addEventListener -->
+
+
+
+
+
+
+    <!-- part 58 -->
+    <!-- <img id="images" src="BlackMarble_2016_1200m_africa_s_labeled.png"> -->
+
+
+
+
+    <h1>Hello</h1>
+
+    <script>
+        
+        // function btnClick(){
+        //     alert("button was clicked");
+        // }
+
+        // btn=document.getElementById("btn")
+        //here if we want to use this button more than once do create a seperate function and call
+        // btn.addEventListener('click',btnClick)
+
+        // //here we can even addd anonomous func//here if we want use for once thne do use in anonomous
+        // btn.addEventListener('click',function(){
+        //     console.log("using anonomous function")
+        // })
+        // btn.addEventListener('mouseover',function(){
+        //     console.log("mouse is over activated")
+        // })
+        // btn.addEventListener('mouseout',function(){
+        //     console.log("mouse is out activated")
+        // })
+
+
+        //part 57 remove event listner
+            // function click1(){
+            //     console.log("click activated")
+            // }
+            // function click2(){
+            //     console.log("click 2 activaed")
+            // }
+            // btn.addEventListener('click',click1)
+            // btn.addEventListener('click',click2)
+            // //remove event listener works only for add event listner function and doesnt work for anonymous function 
+            // btn.removeEventListener('click',click2)
+
+
+            //part 58 pageload event
+            //DOMContent loaded is triggered whne html dom tree is loaded
+            // window.addEventListener('DOMContentLoaded',function(){
+            //     console.log('DOM tree loaded')
+
+            // })
+            // let img=document.getElementById('images')
+            // //here load is triggred when all images pages stylesheets is fully loaded
+            // //after image load ...we canload load after perticular event
+            // img.addEventListener('load',function(){
+            //     console.log('page fully loaded')
+            // })
+
+
+            //part 59 mouse event
+        //     function fn(){
+        //     alert("Event isactivated")
+
+        // }
+
+
+        //pRT 60 keydown event (it canbe key up)this records what ever u type and console log is used to print it is used in games to send reaction 
+    // window.addEventListener("keydown",check)
+    // function check(event){
+    //     console.log(event.key)
+    // }
+
+
+
+    //part61 scroll event
+    // window.addEventListener("scroll",function(){
+    //     console.log("scrolling.......")
+    // })
+
+        // window.addEventListener("wheel",function(event){
+        //     if(event.deltaY > 0)
+        //     {
+        //     console.log("scrolling down");
+        //     }
+        //    else if(event.deltaY < 0)
+        //    {
+        //     console.log("scrolling up");
+        //    }
+        // })
+
+        // here we can use pageXoffset for horizontal scrolling
+        window.addEventListener("scroll",function(){
+            if(window.pageYOffset >500){
+                document.body.style.background="yellow"
+            }
+            else{
+                document.body.style.background="white"
+            }
+        })
+    </script>
+</body>
+</html>

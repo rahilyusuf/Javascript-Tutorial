@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script  src="Tutorial.js" ></script>
+    <script  src="Tutorial1.js" ></script>
+    <script  src="part34.js" ></script>
+
+
+</head>
+<body>
+    <p>This is a js tutorial</p>
+    <!-- <ul>
+        <li class="item">list 1</li>
+        <li id="first">list 2</li>
+        <li class="item">list 3</li>
+    </ul> -->
+    <!-- <h2 class="intro">Heading 1</h2>
+    <div id="div">
+    <p class="intro">Paraghraph 1</p>
+    <h2 class="intro">Heading 2</h2>
+    <p>Paraghraph 2</p>
+    <h2>Heading 3</h2>
+    <p class="intro">Paraghraph 3</p>
+    </div> -->
+    <!-- <script>
+    //     //by id 39
+    //    let elm= document.getElementById("first")
+    //     console.log(elm)
+    //     console.log(elm.innerHTML)
+    //     elm.innerHTML="<p>Hello list</p>"
+
+    //     //by class part 40
+        // let elm1= document.getElementsByClassName("item")
+        // console.log(elm1)
+    
+        //  for(i=0;i<elm1.length;i++){
+        //     console.log(elm1[i].innerHTML='hello rahil')
+        //  }
+       
+     //element by tagname and id
+    //  let div1=document.getElementById("div");
+    //  let elm1= div1.getElementsByTagName("h2")
+    //     console.log(elm1);
+    
+    //      for(i=0;i<elm1.length;i++){
+    //         console.log(elm1[i].innerHTML='hello rahil');
+    //      }   
+
+
+    //query selector and query selector all
+    
+    //  let elm1=document.querySelectorAll("p.intro");
+    //  console.log(elm1);
+
+    //     for(let i=0;i<elm1.length;i++){
+    //     elm1[i].innerHTML="hello";
+    //     }
+         
+
+</script> -->
+<!-- here we wil how to use it for children and child -->
+    <ul  id="intro">
+        <!-- <li id="intro">list 1</li> -->
+        <li>lsit 2 </li>
+        <li>lsit 3</li>
+        <li>lsit 4</li>
+
+    </ul>
+    <ul> 
+        <!-- here we see how to use for siblings  -->
+
+        <li>list a</li>
+        <li id="extro">lsit b </li>
+        <li>lsit c</li>
+        <li>lsit d</li>
+
+    </ul>
+    <ul>
+        <li>list 1</li>
+        <li>lsit 2 </li>
+        <li>lsit 3</li>
+        <li>lsit 4</li>
+
+    </ul>
+    <script>
+//         let elm =document.getElementById("intro");
+//       //  let node=elm.firstElementChild;//here it selects single child we can use first last second etc ...if we 
+//         //want select all the children from the parent then 
+//         let node=elm.children;
+// //now we see how to select siblings
+
+//         // let prt= elm.parentElement;
+//         console.log(node);
+//         // console.log(elm);
+//         // prt.innerHTML="<p>rahil</P>"
+//        // console.log(prt);
+
+let elm=document.getElementById("extro");
+
+let node=elm.previousElementSibling;//here we can use next element sibling
+
+console.log(node);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!-- part 56 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- we wil see how to add new list using js -->
+    <!-- <ul id="list">
+        <li>list1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+    </ul> -->
+
+    <!-- part 49 -->
+    <!-- before begining -->
+    <div id="intro">
+        <!-- after begining -->
+        <h2>This is heading</h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quasi.
+        </p>
+        <!-- before end -->
+    </div>
+    <!-- after end -->
+
+    
+    <script>
+    //  let elm=document.getElementById("list");//parent
+    //   let elm2=document.createElement('li');
+    //  elm2.textContent="list 5";
+    // //  elm.appendChild(elm2);   
+    //     //here we wil see how to append or insert at first ,second ..document.create is used to append t last 
+    
+    //   //  let pos=elm.firstElementChild;
+    // //   when u want add between first and second Element
+    // let pos=elm.firstElementChild.nextElementSibling;//.nextElementsibling
+    // //now when u want to add in between select first element and just keep going with next element sibling on and on
+
+    //     elm.insertBefore(elm2,pos);
+
+
+
+
+    //now we sill how to inser above ul and inside body 
+    // let elm=document.body;
+    // let elm2=document.createElement('h2');
+    // elm2.textContent ="this is new element in body"
+
+    // let list=document.getElementById("list")
+    // elm.insertBefore(elm2,list)
+        
+
+
+    //part 47 how to remove child element in js
+    
+    // let elm=document.getElementById('list');
+    // // let elm2=elm.firstElementChild;
+    // // elm.removeChild(elm2);//list 1 is removed
+
+    // // let elm2=elm.lastElementChild;
+    // // elm.removeChild(elm2);//list 4 is removed
+
+    // // let elm2=elm.firstElementChild.nextElementSibling;
+    // // elm.removeChild(elm2);
+
+    // //remove all child
+    // document.body.removeChild(elm);
+
+
+
+    //part 48 clone
+
+    // let elm=document.getElementById("list");
+    // let clonelm= elm.cloneNode(true);
+    // console.log(elm);
+    // clonelm.id=" body";
+    // document.body.appendChild(clonelm)
+
+// replace 48
+
+// let parent=document.getElementById("list");
+// let elm=document.createElement("li");
+// elm.textContent="services";
+// let replace=parent.firstElementChild.nextElementSibling;
+// parent.replaceChild(elm, replace);
+
+//49 insert adjacent html
+let parent=document.getElementById("intro");
+let html="<h1>new hading </h1>";
+parent.insertAdjacentHTML('beforebegin',html)//here we can use after begin ,before end and after end
+
+    </script>
+</body>
+</html>

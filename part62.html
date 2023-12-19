@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        body{
+            padding:200px;
+            background-color: blueviolet;
+        }
+        #mydiv{
+            padding: 50px;
+            background-color:red ;
+        }
+    </style> -->
+</head>
+<body>
+    <!-- <form action="">
+        <input type="text" name="" id="elm">
+    </form> -->
+
+    <!-- part 63 Event bubbling and event bubling -->
+    <!-- <div id="mydiv">
+        <button id="mybtn">click me</button>
+    </div> -->
+
+
+    <!-- <a href="https://www.google.com" id="anchor">click me </a><br> -->
+    <!-- <form action="" id="myform">
+        <input type="text">
+        <input type="submit"> -->
+    <!-- </form> -->
+    <!-- <button id="btn">google</button>
+    <button id="btn2">yahoo</button>
+    <button id="btn3">clear interval</button> -->
+
+    <!-- <button id="btn" onclick="fun()">redirect to google</button> -->
+    <script>
+        // form=document.getElementById("elm")
+        // form.addEventListener("focus",fun1)
+        // form.addEventListener("blur",fun2)
+        // function fun1(){
+        //     form.style.background="yellow";
+        // }
+        // function fun2(){
+        //     form.style.background="white";
+        // }
+        // //input instead of change also works here input it detects everything u type but change it detects when u type diffrent or input ischanged
+        // form.addEventListener('change',function(){
+        //     console.log(this.value)
+        // })
+
+
+
+        // //part63 (imp)
+        // x=document.getElementById("mydiv")
+        // y=document.getElementById("mybtn")
+        // y.addEventListener("click",btnclick)
+        // x.addEventListener("click",divclick)
+        // //here bublinh works if u want event capturing add 'true' as third parameter in all event listener
+        // document.body.addEventListener("click",bodyclick)
+        // function btnclick(){
+        //     console.log("button is clicked")
+        // }
+        // function divclick(){
+        //     console.log("div is clicked")
+        // }
+        // function bodyclick(){
+        //     console.log("body is clicked")
+        // }
+
+
+
+        // 64 prevenr default in js
+            // let link=document.getElementById("anchor");
+            // link.addEventListener("click",function(e){
+            //     console.log("clicked")
+            //     e.preventDefault();
+            // })
+
+            // let form=document.getElementById("myform")
+            // form.addEventListener("submit",function(e){
+            //     e.preventDefault()
+
+            // })
+
+        //part 65 brwoser object model part 66 window object
+        // btn1=document.getElementById("btn")
+        // button=document.getElementById("btn2")
+
+        // let url="https://www.google.com"
+        // let features="height=500,width=500"
+
+        // btn1.addEventListener("click",function(){
+        //     window.open(url,'google',features)
+        // })
+        //here we can make seperate button named close and use in script to close the window of google in the func window.close
+        // button.addEventListener("click",function(){
+        //     window.open("https://www.yahoo.com",'google')
+        // })
+
+
+        // part 67 time out interval
+        // setTimeout(myfunc,5000)
+        // function myfunc(){
+        //     alert("please subscribe")
+        // } 
+        
+        // btn=document.getElementById('btn3')
+        // var clear=setInterval(fun,2000)
+        // function fun(){
+        //     console.log('please subscribe ,,,,')
+        // }
+
+        // btn.addEventListener("click",function(){
+        //     clearInterval(clear)
+        // })
+
+
+        // part 68 location object
+       // function fun(){
+            //window.location="https://www.google.com"
+            //location.href="https://www.youtube.com"
+           // location.assign("https://www.yahoo.com")
+            //here location.replace is used where it doesnt entry in brwoser after redriect to yahoo we cant come back as it doesnt save the history of previous
+
+            
+       // }
+
+
+       //part 69 navigator object 
+    //    console.log(navigator.appName)
+    //    console.log(navigator.appVersion)
+    //    console.log(navigator.appCodeName)
+    //    console.log(navigator.cookieEnabled)
+    //    console.log(navigator.userAgent)
+    //    console.log(navigator.platform)
+
+
+    //part 70 screen obeject
+    // console.log(screen.colorDepth)
+    // console.log(screen.orientation)
+    </script>
+</body>
+</html>
